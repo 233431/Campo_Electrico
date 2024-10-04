@@ -1,0 +1,54 @@
+/* index.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #282c34;  /* Fondo oscuro para un look técnico */
+  color: #ffffff;             /* Texto en blanco para contraste */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #61dafb;  /* Azul claro como acento */
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1.5em;
+}
+
+a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+code {
+  background-color: #1e1e1e;
+  color: #d4a5a5;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}

@@ -1,0 +1,32 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa; /* Color de fondo claro */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    background-color: beige;
+
+}
+
+.formulario-cargas {
+    display: flex;
+    flex-direction: column; /* Coloca los inputs uno debajo del otro */
+    width: 300px; /* Ancho del formulario */
+}
+
+.form-input {
+    margin: 10px 0; /* Espacio entre los inputs */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ced4da; /* Color del borde */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+.form-input:focus {
+    border-color: #80bdff; /* Color del borde al hacer foco */
+    outline: none; /* Quitar el contorno predeterminado */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra de foco */
+}

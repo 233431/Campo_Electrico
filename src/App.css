@@ -1,0 +1,138 @@
+/* General */
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background: radial-gradient(circle, #1f1f2e, #141422); /* Fondo con un gradiente suave */
+  color: #ffffff;
+}
+
+.App-logo {
+  height: 35vmin;
+  pointer-events: none;
+  filter: drop-shadow(0 0 20px #61dafb); /* Sombra llamativa */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 10s linear; /* Velocidad de rotación ajustada */
+  }
+}
+
+/* Header */
+.App-header {
+  background-color: rgba(40, 44, 52, 0.9); /* Fondo translúcido */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 2vmin); /* Ajuste de fuente */
+  color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  backdrop-filter: blur(10px); /* Añade un efecto de desenfoque */
+}
+
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.App-link:hover {
+  color: #21a1f1; /* Cambio de color al pasar el mouse */
+}
+
+button {
+  background-color: #61dafb;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  color: #282c34;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #21a1f1;
+  transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+  box-shadow: 0 15px 20px rgba(33, 161, 241, 0.4);
+}
+
+/* Animaciones y gráficos matemáticos */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Fondo con patrones matemáticos */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://www.transparenttextures.com/patterns/cubes.png'); /* Fondo geométrico */
+  opacity: 0.05;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.App-header::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  top: 10%;
+  left: 10%;
+  animation: orbit 10s infinite linear;
+  pointer-events: none;
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-header h1 {
+  font-size: 4em;
+  font-family: 'Roboto Slab', serif; /* Fuente estilo matemático */
+  color: #ffcc00;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Sombras llamativas */
+  margin-bottom: 20px;
+}
+
+/* Efecto de texto brillante */
+h1 {
+  background: linear-gradient(90deg, #ffcc00, #ff66b2, #61dafb, #ffcc00);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-animation 8s infinite linear;
+}
+
+@keyframes text-animation {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
